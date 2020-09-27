@@ -29,7 +29,7 @@ $(function(){
   const modalCall = $("[data-modal]");
 
   modalCall.on("click", function(event){
-    event.preventDefault();
+    // event.preventDefault();
     let $this = $(this);
     let modalId = $this.data('modal');
 
