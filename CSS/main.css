@@ -914,7 +914,7 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     overflow: scroll;
 }
 
-.modal .show{
+.modal.show{
     display: flex;
 }
 
@@ -926,6 +926,9 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     margin: auto;    
     background: #ffffff;
     position: relative;
+
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
 }
 
 .modal__close{
