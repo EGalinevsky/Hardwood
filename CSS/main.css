@@ -48,8 +48,10 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 10px;
     padding-left: 30px;
 	color: rgb(0, 0, 0);
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 5px;
+    text-align: center;
+    
 }
 
 .logo-left{
@@ -77,7 +79,68 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-.logo-right{
+.wrapper__nav{
+    display: flex;
+    
+}
+
+.burger__menu{
+    display: inline;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    outline: 0;
+}
+
+.burger__item{
+    display: block;
+    
+    justify-content: center;
+    text-align: center;
+    height: 4px;
+    width: 25px;
+    background: #000;
+    position: relative;  
+    transition: background .1s linear; 
+}
+
+.burger__item:before,
+.burger__item:after{
+    content: "";
+    position: absolute;
+    transition: 0.2s;
+}
+.burger__item:before{
+    transform:translateY(-6px);
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+    background: #000;
+}
+
+.burger__item:after{
+    transform:translateY(6px);
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+    background: #000;
+}
+.burger__item__active span{
+    background: none;
+}
+.burger__item__active span:before{
+    transform: rotate(45deg);
+}
+
+.burger__item__active span:after{
+    transform: rotate(-45deg);
+}
+
+
+.logo__right{
    display: flex;
    padding-right: 15px;
    padding-top: 10px;
@@ -118,6 +181,30 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
     left: 0;
     opacity: 0.7;
+}
+
+.logo__right__active{
+    display: block;
+    position: absolute;
+    padding: 20px 0;
+    width: 150px;
+    top: 60px;
+    background: #fff;
+}
+
+.navigation-link_active{
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.navigation-link_active{
+    display: block;
 }
 
 .wrapper-fab{
@@ -169,6 +256,7 @@ h1, h2, h3, h4, h5, h6{
     background: rgb(172,179,184);
     background: linear-gradient(22deg, rgba(255, 255, 255, 0) 25%, rgba(184, 184, 185, 0.158) 60%);
     height: 720px;
+    overflow: hidden;
 }
     
 .wrapper{
@@ -364,6 +452,7 @@ h1, h2, h3, h4, h5, h6{
    position: relative;
    margin-left: 3rem;
    bottom: 8rem;
+   
 }
 
 .before-slider_dots button{
@@ -377,6 +466,7 @@ h1, h2, h3, h4, h5, h6{
     margin: 10px;
     border-radius: 50%;
     opacity: 1;
+    
 }
 
 .before-slider_dots li:hover{
@@ -389,7 +479,9 @@ h1, h2, h3, h4, h5, h6{
     width: 12px;
     height: 12px;
     opacity: 0.6;
+    
 }
+
 
 .story{
     padding-top: 10px;

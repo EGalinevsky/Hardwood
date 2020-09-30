@@ -11,6 +11,8 @@ $(function () {
   });
 });
 
+
+
 $(function () {
   /*Smooth scroll */
   $("[data-scroll]").on("click", function (event) {
@@ -86,6 +88,12 @@ $(function(){
     
   });
 });
+
+$(".burger__menu").on("click", function(event){
+  event.preventDefault();
+  $(this).toggleClass('burger__item__active');
+  console.log("fefef");
+})
 
 new Vivus(
   'svg1d',
