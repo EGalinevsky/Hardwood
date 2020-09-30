@@ -95,6 +95,12 @@ $(".burger__menu").on("click", function(event){
   console.log("fefef");
 })
 
+$(".burger__menu").on("click", function(event){
+  event.preventDefault();
+  $(".logo__right").toggleClass('logo__right__active');
+  $(".navigation-link").toggleClass('navigation-link_active');
+});
+
 new Vivus(
   'svg1d',
   {

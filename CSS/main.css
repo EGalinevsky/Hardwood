@@ -187,24 +187,26 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     position: absolute;
     padding: 20px 0;
-    width: 150px;
-    top: 60px;
+    width: 160px;
+    top: 40px;
     background: #fff;
 }
 
 .navigation-link_active{
+    display: block;
     font-weight: 500;
     font-size: 15px;
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
+    padding-bottom: 5px;
     border-bottom: 1px solid #000;
     width: 100%;
     margin: .5rem 0;
+    transform: scale(1);
 }
-
-.navigation-link_active{
-    display: block;
+.navigation-link_active:after{
+    display: none;
 }
 
 .wrapper-fab{
