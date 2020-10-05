@@ -92,14 +92,10 @@ $(function(){
 $(".burger__menu").on("click", function(event){
   event.preventDefault();
   $(this).toggleClass('burger__item__active');
-  console.log("fefef");
+  $('.logo__right').toggleClass('logo__right__active');
+  $('.navigation-link').toggleClass('navigation-link_active')
+  
 })
-
-$(".burger__menu").on("click", function(event){
-  event.preventDefault();
-  $(".logo__right").toggleClass('logo__right__active');
-  $(".navigation-link").toggleClass('navigation-link_active');
-});
 
 new Vivus(
   'svg1d',

@@ -186,27 +186,31 @@ h1, h2, h3, h4, h5, h6{
 .logo__right__active{
     display: block;
     position: absolute;
-    padding: 20px 0;
-    width: 160px;
-    top: 40px;
+    padding: 45px 0 20px;
+    width: 150px;
+    right: 140px;
+    top: 10px;
     background: #fff;
 }
+
 
 .navigation-link_active{
     display: block;
     font-weight: 500;
     font-size: 15px;
-    color: #000;
+    padding: .3rem 0;
+    color: #000;    
     text-transform: uppercase;
     text-decoration: none;
-    padding-bottom: 5px;
     border-bottom: 1px solid #000;
     width: 100%;
     margin: .5rem 0;
-    transform: scale(1);
 }
-.navigation-link_active:after{
-    display: none;
+
+
+
+.navigation-link_active:hover{
+    
 }
 
 .wrapper-fab{
