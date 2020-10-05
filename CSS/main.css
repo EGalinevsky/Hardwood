@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .burger__menu{
-    display: inline;
+    display: none;
     background: none;
     border: 0;
     cursor: pointer;
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     position: absolute;
     padding: 45px 0 20px;
-    width: 150px;
+    width: 200px;
     right: 140px;
     top: 10px;
     background: #fff;
@@ -198,20 +198,21 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     font-weight: 500;
     font-size: 15px;
-    padding: .3rem 0;
+    padding: .5rem 0;
     color: #000;    
     text-transform: uppercase;
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.384);
     width: 100%;
     margin: .5rem 0;
 }
 
 
-
-.navigation-link_active:hover{
-    
+.navigation-link_active:after{
+    display: none;
 }
+
+
 
 .wrapper-fab{
     padding-left: 20px;  
@@ -967,9 +968,7 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     margin:2rem 0 0;
 }
 
-.futer__icon{
 
-}
 
 .futer_item_img{
     color: #000;
