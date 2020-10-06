@@ -473,20 +473,17 @@ h1, h2, h3, h4, h5, h6{
     margin: 10px;
     border-radius: 50%;
     opacity: 1;
-    
+    cursor: pointer; 
+          
 }
 
-.before-slider_dots li:hover{
-    cursor: pointer;
-}
-
-.before-slider_dots li.slick-active{
-    background-color: #636363;
-    border: 1px solid #ec8041;
-    width: 12px;
-    height: 12px;
-    opacity: 0.6;
-    
+.before-slider_dots li.slick-active{    
+    background-color: #ffffff;
+    border: 2px solid #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+            
 }
 
 
@@ -1051,12 +1048,70 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
 
 .modal-work{
     display: flex;
+    height: 630px;
 }
 
 .modal-work__preview{
     width: 65%;
     position: relative;
     overflow: hidden;
+}
+
+.modal-work__preview
+.slick-slider{
+    height: 100%;  
+    display: flex;  
+    flex-direction: column;
+}
+
+.modal-work__preview
+.slick-list
+.slick-track{
+    height: 100%; 
+}
+
+.modal-work__preview
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    margin: 0;
+    padding: 0;    
+    list-style: none;
+    position: absolute;
+    bottom: 1.4rem;
+    left: 0;
+    z-index: 2;    
+}
+
+
+
+
+.modal-work__preview
+.slick-dots
+button {
+    margin-left: .8rem;
+    padding: 0;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 0;
+
+    width: 10px;
+    height: 10px;
+}
+
+.modal-work__preview
+.slick-dots
+button:focus{
+    outline: 0;
+}
+
+.slick-dots
+li.slick-active button{   
+  background: #000000;  
+  outline: none;  
 }
 
 .modal-work__photo{

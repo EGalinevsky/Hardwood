@@ -11,6 +11,28 @@ $(function () {
   });
 });
 
+$(function () {
+  $('#worksSlider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    dots:true
+  });
+  $(".slickPrev").on("click",  function(event){
+    event.preventDefault();
+
+    $('#worksSlider').slick("slickPrev");
+  })
+  $(".slickNext").on("click",  function(event){
+    event.preventDefault();
+
+    $('#worksSlider').slick("slickNext")
+  })
+});
+
+
 
 
 $(function () {
@@ -45,6 +67,8 @@ $(function(){
           transform: "rotateX(0)"
         });
       }, 100);    
+
+      $('#worksSlider').slick('setPosition');
 });
 
 
