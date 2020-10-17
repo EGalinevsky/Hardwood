@@ -616,6 +616,9 @@ h1, h2, h3, h4, h5, h6{
 
 .section-img{
     padding-top: 50px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto; 
 }
 
 .section-img-head{
@@ -623,7 +626,8 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: 700;
     font-size: 33px;
     color: #535353;
-    margin-left: 10rem;
+    
+    margin-left: 2rem;
 }
 
 .wrapper-works{
@@ -663,7 +667,7 @@ h1, h2, h3, h4, h5, h6{
 
 .works-item:hover {
     opacity: .5;
-    transform: scale3d(1.03,1.03,1.03);
+    transform: scale3d(1.01,1.01,1.01);
 }
 
 .works-item:hover  .works-info1{
@@ -862,7 +866,7 @@ h1, h2, h3, h4, h5, h6{
     color: #757575;
     text-transform: uppercase;
     padding: 5px 35px ;
-    border: 2px solid #757575;
+    border: 1px solid #757575;
     border-radius: 12px;
     background:  #f8f8f8;
     transition: background .2s linear, color .2s linear;
@@ -885,12 +889,12 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
 
 .futer-header{
     text-align: center; 
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 9px;
     text-transform: uppercase;
-
 }
+
 .futer__inner{
     display: block;
     text-align: center;
@@ -899,7 +903,7 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
 
 .futer__header2{
     font-family:  'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -915,13 +919,13 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     text-align: left;
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 
 .futer__name__contact{
     display: flex;
-    margin-top: .3rem;
     
+    margin-top: .3rem;
     
 }
 
@@ -929,8 +933,10 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     text-align: left;
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
+    font-size: .8rem;
+    text-align: center;
+    
+    margin: 0 .5rem 0 0;
 }
 
 .futer__phone__number{
@@ -938,14 +944,14 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     text-align: left;
     font-family:'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    
+    font-size: .8rem;
     text-decoration: none;
     color: #000;
     
 }
 .futer__follow{
-    display: flex;
-    /* margin: 0 auto; */
+    display: flex;    
     justify-content: center;
 }
 .futer_item_img{
@@ -974,9 +980,10 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
 .futer_e-mail__result{
     font-family:'Montserrat', sans-serif;
     display: flex;
+    text-align: center;
     text-decoration: none;
     color: #000;
-    font-size: 1.2rem;
+    font-size: .8rem;
     font-weight: 300;
 
 }
@@ -1125,7 +1132,7 @@ li.slick-active button{
 
 .modal-work__content{
     width: 35%;
-    padding: 3.4rem 5.6rem 1rem 0.2rem;
+    padding: 2.5rem 5.6rem 1rem 0.2rem;
     position: relative;
 }
 
@@ -1142,12 +1149,12 @@ li.slick-active button{
 
 
 .modal-work__header{
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .moda-work__title{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #000;
     font-weight: 700;
     text-transform: uppercase;
@@ -1156,18 +1163,24 @@ li.slick-active button{
 
 .modal-work__info{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #575757;
     text-transform: uppercase;
 }
 
 .modal-work__text{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;    
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 400;
+    line-height: 1.5;    
     color: #575757;
-    margin-bottom: 6.5rem;
+    margin-bottom: 5.5rem;
 }
+
+.modal-work__text p{
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
 
 .modal-work_btn{
     display: inline;
@@ -1195,13 +1208,14 @@ li.slick-active button{
     display: block;
     width: 100%;
     padding: .5rem 1.8rem;
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     border: 1px solid #a7a7a7;
     border-radius: 2rem;
     outline: 0;
+    overflow: hidden;
     height: 100px;
     resize: none;
     
@@ -1216,9 +1230,9 @@ li.slick-active button{
 .btn__modal{
     text-transform: uppercase;
     margin-top: 2rem;
-    padding: .9rem 3.3rem .8rem;
+    padding: .3rem 3rem .3rem;
     background-color: #fff;
-    border: 1px solid #a7a7a7;
+    border: 1px solid #bebebe;
     border-radius: 20px;
     text-align: center;
     cursor: pointer;
