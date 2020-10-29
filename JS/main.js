@@ -12,7 +12,7 @@ $(function () {
 });
 
 $(function () {
-  $('#worksSlider').slick({
+  $('.worksSlider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -23,12 +23,12 @@ $(function () {
   $(".slickPrev").on("click",  function(event){
     event.preventDefault();
 
-    $('#worksSlider').slick("slickPrev");
+    $('.worksSlider').slick("slickPrev");
   })
   $(".slickNext").on("click",  function(event){
     event.preventDefault();
 
-    $('#worksSlider').slick("slickNext")
+    $('.worksSlider').slick("slickNext")
   })
 });
 
