@@ -1021,9 +1021,8 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
 
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 1000;
-    overflow: scroll;
+    left: 0;    
+    /* overflow: scroll; */
 }
 
 .modal.show{
