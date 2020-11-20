@@ -32,6 +32,15 @@ $(function () {
   })
 });
 
+$(function(){
+  $('.reviews__item').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,    
+  })
+})
+
 
 
 
@@ -51,7 +60,9 @@ $(function () {
 
 $(function(){
   const modalCall = $("[data-modal]");
-  const modalClose = $("[data-close]")
+  const modalClose = $("[data-close]");
+  var noShow =$('.header');
+  // var noShow = $('.header__noShow');
 
   modalCall.on("click", function(event){
     event.preventDefault();
@@ -59,6 +70,7 @@ $(function(){
     let $this = $(this);
     let modalId = $this.data('modal');
 
+    $(noShow).addClass('header__noShow');
     $(modalId).addClass('show');
     $("body").addClass('no-scroll');
 
@@ -81,12 +93,15 @@ $(function(){
     modalParent.find(".modal__dialog").css({
       transform: "rotateX(90deg)"
     });
+    
 
     setTimeout(function(){
+
+      $('#header').removeClass('header__noShow');
       modalParent.removeClass('show');
       $('body').removeClass('no-scroll');
       
-      }, 100);  
+      }, 200);  
 
     
   });
@@ -100,6 +115,7 @@ $(function(){
       });
 
       setTimeout(function(){
+        $('#header').removeClass('header__noShow');
         $this.removeClass('show');
         $('body').removeClass('no-scroll');
         

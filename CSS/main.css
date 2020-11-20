@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6{
     transition: all 0.4s ease;
 }
 
+.header__noShow{
+    position: relative;
+}
+
 .container{
     width: 100%;
 	max-width: 1200px;
@@ -50,7 +54,7 @@ h1, h2, h3, h4, h5, h6{
 .logo-header{
 	display: flex;
 	justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 30px;
 	color: rgb(0, 0, 0);
     /* align-items: center; */
@@ -110,8 +114,8 @@ h1, h2, h3, h4, h5, h6{
     transition: background .1s linear; 
 }
 
-.burger__item:before,
-.burger__item:after{
+.burger__item::before,
+.burger__item::after{
     content: "";
     position: absolute;
     transition: 0.2s;
@@ -394,6 +398,10 @@ h1, h2, h3, h4, h5, h6{
     height: 720px;
 }
 
+.reviews__item .slick-list {
+    height: 100%;
+}
+
 .dollar {
     margin-right: 12px;
 }
@@ -578,7 +586,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #bebebe;
     top: 50%;
     right: 0;
-    z-index: 1;            
+               
 }
 
 .head-proces::before{
@@ -591,7 +599,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #bebebe;
     top: 50%;
     left:  0;
-    z-index: 1;    
+       
 }
 
 .head-Modern{
@@ -692,7 +700,7 @@ h1, h2, h3, h4, h5, h6{
 	max-width:  100%;
 	height: auto;
     transition: opacity .2s linear ;
-    box-shadow: -18px 16px 14px -7px #c0c0c0;;
+    box-shadow: -18px 16px 14px -7px #c0c0c069;;
 }
 
 .works-info {
@@ -712,7 +720,7 @@ h1, h2, h3, h4, h5, h6{
     color: rgb(0, 0, 0);
     padding: 0 15px;
 	position: absolute;
-	top: 75%;
+	bottom: 5%;
 	left: 8%;	
 }
 
@@ -726,9 +734,9 @@ h1, h2, h3, h4, h5, h6{
 .works-text1 {
     font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
-    font-size: 16px;
+    font-size: 14px;
     color: #535353;
-    line-height: 22px;
+    line-height: 20px;
     text-transform: uppercase;
     text-align: left; 
 }
@@ -825,6 +833,54 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
 }
 
+.reviews{
+    display: block;
+    margin: 80px 0 100px;
+}
+
+.reviews__header{
+    display: block;    
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.reviews__item{
+    display: flex; 
+    justify-content: space-between;   
+    overflow: hidden;
+}
+
+.reviews__img{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.reviews__inner{
+    flex-grow: 1;
+    flex-basis: 33%;
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.reviews__title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #59d9b9;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.reviews__text{
+    text-indent: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
 .discont{
     display: flex;
     justify-content: space-between;
@@ -839,6 +895,7 @@ h1, h2, h3, h4, h5, h6{
 .log-head{
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
+    
     font-weight: 800;
     letter-spacing: 2px;
 }
@@ -885,20 +942,20 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-log:hover{
     background: rgb(99, 99, 99);
-    border: 2px solid rgb(99, 99, 99);
+    border: 1px solid rgb(99, 99, 99);
     color: #ffffff;
 }
 
-.futer__background{
+.footer__background{
     background: rgb(140,140,140);
 background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba(255,255,255,0.4153462956460674) 63%);
 }
 
-.futer{
+.footer{
     margin-top: 70px; 
 }
 
-.futer-header{
+.footer-header{
     text-align: center; 
     font-size: 30px;
     font-weight: 700;
@@ -906,26 +963,26 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     text-transform: uppercase;
 }
 
-.futer__inner{
+.footer__inner{
     display: block;
     text-align: center;
     margin-top: 1.3rem;
 }
 
-.futer__header2{
+.footer__header2{
     font-family:  'Montserrat', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.futer__item{
+.footer__item{
     display: block;
     margin: 0 auto;
     width: 20rem;
     
 }
 
-.futer__address{
+.footer__address{
     margin-top: .9rem;
     text-align: left;
     font-family:'Montserrat', sans-serif;
@@ -933,14 +990,14 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     font-size: .9rem;
 }
 
-.futer__name__contact{
+.footer__name__contact{
     display: flex;
     
     margin-top: .3rem;
     
 }
 
-.futer__phone{    
+.footer__phone{    
     text-align: left;
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
@@ -950,7 +1007,7 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     margin: 0 .5rem 0 0;
 }
 
-.futer__phone__number{
+.footer__phone__number{
     display: flex;
     text-align: left;
     font-family:'Montserrat', sans-serif;
@@ -961,11 +1018,11 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     color: #000;
     
 }
-.futer__follow{
+.footer__follow{
     display: flex;    
     justify-content: center;
 }
-.futer_item_img{
+.footer_item_img{
     margin:2rem 2rem 0 0  ;
     padding: 6px 6px 1px;
     border: 1px solid #000 ;
@@ -973,22 +1030,22 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
     transition:transform .1s linear ;
 }
 
-.futer_item_img:hover{
+.footer_item_img:hover{
     transform: translateY(-4px);
     
 }
 
-.futer_item_img:last-child{
+.footer_item_img:last-child{
     margin:2rem 0 0;
 }
 
 
 
-.futer_item_img{
+.footer_item_img{
     color: #000;
 }
 
-.futer_e-mail__result{
+.footer_e-mail__result{
     font-family:'Montserrat', sans-serif;
     display: flex;
     text-align: center;
@@ -999,7 +1056,7 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
 
 }
 
-.futer__header2{
+.footer__header2{
     margin-top: 2rem;
 }
 
@@ -1136,6 +1193,8 @@ li.slick-active button{
     left: 48%;
     top: 50%;
     z-index: 1;
+    max-width: 550px;
+    max-height: 550px;
 
     transform: translate3d(-50%, -50%, 0);
 }
@@ -1608,6 +1667,8 @@ font-size: 60px;
 .works-col:first-child{
     margin:  auto;
 }
+
+
 
 .discont{
     display: flex;
