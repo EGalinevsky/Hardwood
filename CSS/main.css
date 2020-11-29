@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     width: 0%;   
     right: 0; 
-    height: 2px;
+    height: 1px;
     background-color: rgb(0, 0, 0);
     position: absolute;
     top: 100%;
@@ -491,7 +491,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .before-slider_dots{
-   margin: auto;
+   margin: 20px auto;
    display: flex;
    list-style: none;
    padding: 0;
@@ -506,8 +506,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .before-slider_dots li{
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: black;
     margin: 10px;
     border-radius: 50%;
@@ -518,9 +518,9 @@ h1, h2, h3, h4, h5, h6{
 
 .before-slider_dots li.slick-active{    
     background-color: #ffffff;
-    border: 2px solid #000;
-    width: 10px;
-    height: 10px;
+    border: 1px solid #000;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
             
 }
@@ -545,7 +545,7 @@ h1, h2, h3, h4, h5, h6{
 .our-story{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 55px;
+    font-size: 45px;
     text-align: center;
     letter-spacing: 12px;    
     color: #2b2b2b;
@@ -594,11 +594,11 @@ h1, h2, h3, h4, h5, h6{
 .head-proces{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     position: relative;
     margin-bottom: 50px;
-    letter-spacing: 8px;
+    letter-spacing: 12px;
     color: #2b2b2b;
 }
 
@@ -660,7 +660,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .section-img{
-    padding-top: 50px;
+    padding-top: 40px;
     width: 100%;
     max-width: 1250px;
     margin: 0 auto; 
@@ -668,11 +668,12 @@ h1, h2, h3, h4, h5, h6{
 
 .section-img-head{
     font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-    font-size: 33px;
-    color: #535353;
+	font-weight: 600;
+    font-size: 45px;
+    color: #000000;
+    letter-spacing: 5px;
     
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .wrapper-works{
@@ -686,7 +687,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     width: 100%;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .works-col{
@@ -861,7 +862,7 @@ h1, h2, h3, h4, h5, h6{
 
 .reviews{
     display: block;
-    padding-top: 70px;
+    padding-top: 50px;
     margin: 10px 0 100px;
     position: relative;
 }
@@ -874,9 +875,10 @@ h1, h2, h3, h4, h5, h6{
     display: block;    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
 }
 
 .reviews__item{
@@ -1474,6 +1476,7 @@ font-size: 60px;
 
 .our-story{
     font-size: 40px;
+    
 }
 
 .story-text{
