@@ -37,9 +37,24 @@ $(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 100000,    
-  })
-})
+    autoplaySpeed: 100000,   
+    responsive: [{
+      breakpoint: 840,
+      settings:{
+        slidesToShow: 2,
+      }
+    }, {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    ]
+  });
+  
+});
+
+
 
 
 

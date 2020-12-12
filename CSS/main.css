@@ -724,7 +724,8 @@ h1, h2, h3, h4, h5, h6{
 .works-img {
     display: block;
     /* margin: 20px 20px 0 20px; */
-	max-width:  100%;
+    max-width:  100%;
+    border-radius: 10px;
 	height: auto;
     transition: opacity .2s linear ;
     box-shadow: -18px 16px 14px -7px #c0c0c069;;
@@ -977,7 +978,7 @@ h1, h2, h3, h4, h5, h6{
 .log-text{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     color: #424242;
 }
@@ -1187,6 +1188,7 @@ background: linear-gradient(10deg, rgba(140,140,140,0.7468069698033708) 0%, rgba
 .modal-work{
     display: flex;
     height: 630px;
+    padding: 1px;
 }
 
 .modal-work__preview{
@@ -1283,6 +1285,10 @@ li.slick-active button{
 
 .modal-work__header{
     margin-bottom: 1.5rem;
+}
+
+.modal-work__header_media{
+    display: none;
 }
 
 .moda-work__title{
@@ -1798,14 +1804,96 @@ font-size: 60px;
     margin-left: 1.2rem;
     margin-bottom: 1.2rem;
 }
+.modal__dialog{
+    height: 800px;
+    max-height: 780px;
 }
+
+.modal-work{
+    display: block;
+}
+
+.modal{
+    overflow: scroll;
+    padding: .5rem 1rem;
+}
+.modal-work__header{
+    display: none;
+}
+
+.modal-work__header_media{
+    display: block;
+    margin-top: 50px;
+}
+
+.moda-work__title{
+    text-align: center;
+}
+.modal-work__info{
+    text-align: center;
+}
+
+.modal-work__photo{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.modal-work__preview{
+    width: 100%;
+}
+
+.modal-work__preview .slick-slider .slick-list{
+    height: 320px;
+}
+
+.modal-work__preview .slick-dots{
+    bottom: 0;
+}
+
+.modal-work__preview .slick-dots button{
+    width: 8px;
+    height: 8px;
+}
+
+.modal-work__content{
+    width: 100%;
+    padding: 1.5rem 1rem;
+}
+.modal-work__text{
+    margin-bottom: 2.5rem;
+}
+
+.modal-work__text p{
+    text-indent: 20px;
+    
+}
+.btn__modal{
+    margin-top: 1rem;
+}
+
+.modal-work__footer{
+    padding: 0 .5rem 1.2rem .5rem;
+}
+
+.reviews__img{
+    margin: 0 auto 20px;
+}
+}
+
+
 
 @media (max-width: 376px){
 
 .works-info2{
     bottom: 20%;
-}    
+}   
+.modal__dialog{
+    height: 800px;
+    max-height: 800px;
+} 
 }
+
+
 
 @media (max-width: 320px){
 
@@ -1824,4 +1912,9 @@ font-size: 60px;
 .works-info1{
     top:75%;
 }
+.modal__dialog{
+    height: 820px;
+    max-height: 820px;
 }
+}
+
