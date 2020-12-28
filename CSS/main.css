@@ -728,7 +728,7 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 10px;
 	height: auto;
     transition: opacity .2s linear ;
-    box-shadow: -18px 16px 14px -7px #c0c0c069;;
+    box-shadow: -18px 16px 14px -7px #c0c0c03d;
 }
 
 .works-info {
@@ -863,7 +863,7 @@ h1, h2, h3, h4, h5, h6{
 
 .reviews{
     display: block;
-    padding-top: 50px;
+    padding-top: 45px;
     margin: 10px 0 100px;
     position: relative;
 }
@@ -1575,9 +1575,16 @@ font-size: 60px;
     height: 100%;
 }
 
+.story-section{
+    padding-top: 50px;
+}
+
 .reviews__inner{
     flex-basis: 50%;
     
+}
+.reviews{
+    padding-top: 35px;
 }
 
 .modal-work__photo{
@@ -1841,6 +1848,17 @@ font-size: 60px;
 .modal-work__preview{
     width: 100%;
 }
+.slick-list{
+    height: 660px;
+}
+
+.backgroudLogo{
+    height: 650px;
+}
+
+.section-logo{
+    height: 600px;
+}
 
 .modal-work__preview .slick-slider .slick-list{
     height: 320px;
@@ -1910,7 +1928,7 @@ font-size: 60px;
 }
 
 .works-info1{
-    top:75%;
+    top:80%;
 }
 .modal__dialog{
     height: 820px;
