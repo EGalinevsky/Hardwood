@@ -1356,15 +1356,17 @@ li.slick-active button{
     outline: 0;
     overflow: hidden;
     height: 100px;
-    resize: none;
-    
+    resize: none;    
 }
 
-.form__text:focus{
-    
+.form__text:focus{    
     border-color: rgb(0, 0, 0);
 }
 
+.form__text._error{
+    box-shadow: 0 0 15px #ff0000;
+    border-color: rgba(255, 0, 0, 0.466);
+}
 
 .btn__modal{
     text-transform: uppercase;

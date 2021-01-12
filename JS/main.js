@@ -1,3 +1,4 @@
+//slider home
 $(function () {
   $("[data-slider]").slick({
     infinite: true,
@@ -11,6 +12,7 @@ $(function () {
   });
 });
 
+//slider works
 $(function () {
   $('.worksSlider').slick({
     infinite: true,
@@ -32,6 +34,7 @@ $(function () {
   })
 });
 
+//slider reviews
 $(function(){
   $('.reviews__item').slick({
     slidesToShow: 3,
@@ -54,11 +57,7 @@ $(function(){
   
 });
 
-
-
-
-
-
+// scroll to block
 $(function () {
   /*Smooth scroll */
   $("[data-scroll]").on("click", function (event) {
@@ -73,6 +72,7 @@ $(function () {
   })
 });
 
+//button close and open
 $(function(){
   const modalCall = $("[data-modal]");
   const modalClose = $("[data-close]");
@@ -144,6 +144,7 @@ $(function(){
   });
 });
 
+//burger menu
 $(".burger__menu").on("click", function(event){
   event.preventDefault();
   $(this).toggleClass('burger__item__active');
@@ -151,7 +152,7 @@ $(".burger__menu").on("click", function(event){
   $('.navigation-link').toggleClass('navigation-link_active')
   
 })
-
+// animated svg 1
 new Vivus(
   'svg1d',
   {
@@ -160,6 +161,7 @@ new Vivus(
   }
 );
 
+// animated svg 2
 new Vivus(
   'svg2d',
   {
@@ -168,6 +170,7 @@ new Vivus(
   }
 );
 
+// animated svg 3
 new Vivus(
   'svg3d',
   {
@@ -176,3 +179,81 @@ new Vivus(
 
   }
 ); 
+
+//send form to the email
+
+   
+
+    const buttonModal = document.querySelector('#btn__modal_popap');    
+    const form = document.getElementById('form');
+    const textSend = document.getElementById('input-request');  
+    
+
+    form.addEventListener('submit', formSend);
+
+    async function formSend(e){
+      e.preventDefault();
+
+      let formData = new FormData(form);
+
+      let error = formValidate(form);     
+
+           
+    }
+    function formValidate(form){
+      
+      buttonModal.addEventListener('click', function(){
+        event.preventDefault();
+        if (textSend.value === ''){
+          textSend.classList.add('_error'); 
+        } else {
+          let response = await fetch('sendmail.php', {
+            method: 'POST',
+            body: formData
+          })
+        }      
+      });
+    } 
+
+
+    
+    
+    
+
+    
+
+// document.addEventListener('DOMcontentLoaded', function(){
+    
+
+
+//     // function formValidate(form){
+//     //   let error = 0;
+
+
+//     //   let formReq = document.querySelectorAll('._req');
+
+//     //   for (let index = 0; index < formReq.length; index++) {
+//     //     const input = formReq[index];
+//     //     formRemoveError(input);
+
+//     //     if (input.classList.contains('_email')) {
+
+//     //     } else{
+//     //       if (input.value === '') {
+//     //         formAddError(input);
+//     //       }
+//     //     }
+        
+//     //   }
+//     // }
+
+//     // function formAddError(input) {
+//     //   input.parentElement.classList.add('_error')
+//     //   input.classList.add('_error')
+//     // }
+
+//     // function formRemoveError(input) {
+//     //   input.parentElement.classList.remove('_error')
+//     //   input.classList.remove('_error')
+//     // }
+// });
