@@ -207,10 +207,10 @@ new Vivus(
         if (textSend.value === ''){
           textSend.classList.add('_error'); 
         } else {
-          let response = await fetch('sendmail.php', {
-            method: 'POST',
-            body: formData
-          })
+          // let response = await fetch('sendmail.php', {
+          //   method: 'POST',
+          //   body: formData
+          // })
         }      
       });
     } 
