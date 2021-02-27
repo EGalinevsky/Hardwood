@@ -182,38 +182,6 @@ new Vivus(
 
 //send form to the email
 
-   
-
-    const buttonModal = document.querySelector('#btn__modal_popap');    
-    const form = document.getElementById('form');
-    const textSend = document.getElementById('input-request');  
-    
-
-    form.addEventListener('submit', formSend);
-
-    async function formSend(e){
-      e.preventDefault();
-
-      let formData = new FormData(form);
-
-      let error = formValidate(form);     
-
-           
-    }
-    function formValidate(form){
-      
-      buttonModal.addEventListener('click', function(){
-        event.preventDefault();
-        if (textSend.value === ''){
-          textSend.classList.add('_error'); 
-        } else {
-          // let response = await fetch('sendmail.php', {
-          //   method: 'POST',
-          //   body: formData
-          // })
-        }      
-      });
-    } 
 
 
     
