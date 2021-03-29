@@ -4,16 +4,25 @@ const send3 = document.querySelector('#send_form3');
 const send4 = document.querySelector('#send_form4');
 const send5 = document.querySelector('#send_form5');
 const send6 = document.querySelector('#send_form6');
+const btn = document.querySelector('.btn__modal');
+
+
 
 
 send1.addEventListener("submit", (e)=>{
+    
     e.preventDefault()
 
     var text1 = document.getElementById('sendOne').value;
 
-    let my_text =`Result is:%0A<b>Text:</b> %0A<i>${text1}</i>`
+    console.log(text1)
 
-    var token = '1566809566:AAFvZ6liPTAWZGyA_we3Gvd0zzzJRgktAPA'
+
+    let my_text =`<b>Text from website:</b> %0A<i>${text1}</i>`
+
+    console.log(my_text);
+
+    var token = '1566809566:AAFvZ6liPTAWZGyA_we3Gvd0zzzJRgktAPA';
     var chat_id = -1001402174525
 
     var url =`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}&parse_mode=html`
@@ -25,7 +34,7 @@ send1.addEventListener("submit", (e)=>{
     document.getElementById('sendOne').value = '';
 
     console.log('message successfully')
-})
+});
 send2.addEventListener("submit", (e)=>{
     e.preventDefault()
 
